@@ -54,7 +54,7 @@ const REGIONS = [
           clubs.push({
             id: valori[0].textContent,
             name: name,
-            nameRaw: valori[1].textContent,
+            nameOrig: valori[1].textContent,
             region: region.name,
             province: province,
             city: valori[2].textContent
@@ -68,6 +68,6 @@ const REGIONS = [
     }
   }
 
-  await fs.writeFileSync(path.join('data', 'clubs.json'), JSON.stringify(clubs), 'utf8');
-  await fs.writeFileSync(path.join('data', 'names.json'), JSON.stringify(Array.from(names)), 'utf8');
+  fs.writeFileSync(path.join('data', 'clubs.json'), JSON.stringify(clubs), 'utf8');
+  fs.writeFileSync(path.join('data', 'names.json'), JSON.stringify(Array.from(names)), 'utf8');
 })();

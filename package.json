@@ -1,14 +1,14 @@
 {
-  "name": "scraper",
-  "version": "1.0.0",
-  "description": "",
+  "name": "fidal-json",
+  "version": "1.1.0",
+  "description": "An opinionated normalizer for the list of fidal-registered sports clubs",
   "main": "fetch-data.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Matteo Gadola <matteo.gadola@eonet.it>",
   "license": "ISC",
   "dependencies": {
-    "jsdom": "^26.0.0"
+    "jsdom": "^31.0.1"
   }
 }
